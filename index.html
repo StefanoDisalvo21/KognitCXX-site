@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KognitCXX — C++ Code Intelligence</title>
+<meta name="description" content="A local-first engine for understanding large C++ codebases through structural analysis, intelligent retrieval, and AI-assisted questions. Currently in development.">
+<meta property="og:title" content="KognitCXX — C++ Code Intelligence">
+<meta property="og:description" content="Local-first C++ code intelligence, built for the terminal. Currently in development.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0B0C0E">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/main.js" defer></script>
+</head>
+<body>
+  <div class="glow"></div>
+
+  <main>
+    <section class="hero">
+      <h1>KognitCXX</h1>
+      <p class="tagline">C++ Code Intelligence, built for the terminal.</p>
+
+      <div class="terminal" aria-hidden="true">
+        <div class="terminal-bar">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span>kognitcxx ask "who calls parseExpr()?"</p>
+          <p class="output">  3 call sites across 2 files</p>
+          <p class="output indent">parser.cpp:142, parser.cpp:203</p>
+          <p class="output indent">ast_builder.cpp:58</p>
+          <p><span class="prompt">$</span><span class="cursor">▌</span></p>
+        </div>
+      </div>
+
+      <p class="description">
+        Exploring a local-first engine for understanding large C++ codebases through structural analysis, intelligent retrieval, and AI-assisted questions.
+      </p>
+
+      <p class="status"><span class="status-dot"></span>Currently in development</p>
+
+      <div>
+        <!-- Repo is private for now, so this points to the profile.
+             Swap the href for the KognitCXX repo URL once it's public. -->
+        <a class="cta" href="https://github.com/StefanoDisalvo21" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+          View on GitHub
+        </a>
+      </div>
+    </section>
+
+    <section class="directions">
+      <h2>Planned directions</h2>
+      <div class="direction-grid">
+        <div class="direction">
+          <h3>Structural analysis</h3>
+          <p>Parses and models a codebase's real structure using Clang's semantic understanding, not regular expressions.</p>
+        </div>
+        <div class="direction">
+          <h3>Intelligent retrieval</h3>
+          <p>Combines git history and static analysis to surface the context that actually matters for a query.</p>
+        </div>
+        <div class="direction">
+          <h3>AI-assisted questions</h3>
+          <p>Natural-language questions answered against the real structure of the code, not just text search.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Local-first. No accounts, no cloud, no telemetry.</p>
+    <p>© 2026 Stefano Disalvo</p>
+  </footer>
+</body>
+</html>
